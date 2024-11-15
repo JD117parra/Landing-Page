@@ -7,7 +7,7 @@
     list-style: none;
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     line-height: 1.5;
-    border: 1px solid red;   
+    border: 1px solid red;  
 }
 
 a {
@@ -238,10 +238,8 @@ nav .nav-items {
     margin: 0; 
   } 
 
-
-
-
 /* CONTACT -------------------------------------------------*/
+
 .contact {
   position: relative;
   height: 614px;
@@ -393,6 +391,7 @@ div.main-footer-container{
     grid-template-columns: 20rem repeat(4, 1fr);
     margin-top: 1rem;
     justify-content: center;
+    gap: 0 50px
 }    
 
 div.footer-list h3 {
@@ -402,7 +401,6 @@ div.footer-list h3 {
 div.footer-list ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
     font-size: 13px;
 }
 
@@ -410,13 +408,14 @@ div.footer-list ul {
 .footer-list-icons img{
   height: 19px;
   width: 19px;
+  margin: 0;
 }
 
 .footer-list-icons {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  gap: 30px;
+  
 }
 
 div.Derechos {
