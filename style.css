@@ -87,6 +87,12 @@ nav .nav-items {
   padding: 20px;
 }
 
+.banner-a h1 {
+  font-weight: 900;
+  font-size: 3rem;
+  width: 70%;
+}
+
 .banner-a h1,
 .banner-a p,
 .banner-input,
@@ -117,11 +123,7 @@ nav .nav-items {
   margin: 2% 0 2% 0;
 }
 
-.banner-a h1 {
-  font-weight: 900;
-  font-size: 3rem;
-  width: 70%;
-}
+
 
 .banner-a p {
   font-size: 0.8rem;
@@ -242,10 +244,25 @@ nav .nav-items {
 
 .contact {
   position: relative;
-  height: 614px;
+  height: 500px;
   width: 100%;
   top: 0;
   background-color: rgba(17, 24, 39, 1);
+}
+
+.contact-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width:auto;
+  height: 15rem;
+  margin: 0px 394px;
+  padding: 128px 32px;
+  z-index: 2; /* Establece el div de frente con un índice más alto*/
+  display:inline-block;
+  flex-direction:row;
+  align-items:flex-end;
 }
 
 .playing-guitar {
@@ -263,27 +280,15 @@ nav .nav-items {
   object-fit: cover;/* Ajusta la imagen para que cubra completamente el contenedor*/
 }
 
-.contact-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width:auto;
-  margin: 0px 394px;
-  padding: 128px 32px;
-  z-index: 2; /* Establece el div de frente con un índice más alto*/
-  display:inline-block;
-  flex-direction:row;
-  align-items:flex-end;
-}
 
 .description {
   position: relative;
   width: auto;
-  max-width: 90%; /* Ajuste opcional para pantallas más pequeñas */
+  max-width: 90%; 
   height: 358px;
   margin: 0 0 0 608.003px;
   padding: 0 0 0 40px;
+  bottom: 50px;
 }
 
 .description h2 {
@@ -315,7 +320,7 @@ nav .nav-items {
 .btn {
   display: inline-flex;
   width: auto;
-  padding: 12px 20px;
+  padding: 7px 10px;
   border-radius: 0.375rem;
   background: #ffffff;
   cursor: pointer;
@@ -327,6 +332,7 @@ nav .nav-items {
   align-items: center;
   justify-content: center;
   font-size: 16px;
+  color: #000000;
 }
 
 .click-btn svg {
@@ -402,8 +408,8 @@ div.footer-list ul {
     list-style-type: none;
     padding: 0;
     font-size: 13px;
+    width: auto;
 }
-
 
 .footer-list-icons img{
   height: 19px;
@@ -415,7 +421,6 @@ div.footer-list ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  
 }
 
 div.Derechos {
