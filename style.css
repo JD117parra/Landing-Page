@@ -7,14 +7,14 @@
     list-style: none;
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     line-height: 1.5;
-    /* border: 1px solid red;    */
+    border: 1px solid red;   
 }
 
 a {
   color: aliceblue;
 }
 
-/* HEADER */
+/* HEADER -----------------------------------------------*/
 
  header {
     display: flex;
@@ -40,31 +40,29 @@ nav .nav-items {
     flex-direction: row;
     justify-content: space-evenly;
     width: 30%;
-    margin: 0 0 0 25rem
+    margin: 0 0 0 25rem;
 }
 
+.nav-items li {
+  list-style: none;
+  width: 8rem;
+}
 
  .start-session  {
  margin: 0 30rem 0 500px;
- padding: 10rem;
- width: 5rem;
+ padding: 10px;
+ width: 6rem;
 }
 
 .start-session a {
     color: white;
     background: black;
     border: none;
+    white-space: nowrap;
 } 
 
 
- .nav-items li {
-    list-style: none;
-    padding: 7px;
-}
-
-/* NAV */
-
-/* MAIN */
+/* MAIN BANNER------------------------------------------*/
 
 .main-banner {
   height: 40rem;
@@ -82,7 +80,7 @@ nav .nav-items {
 .banner-a {
   color: aliceblue;
   width: 30%;
-  margin: 2rem 0 2rem 10rem;
+  height: 75%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -93,7 +91,12 @@ nav .nav-items {
 .banner-a p,
 .banner-input,
 .banner-a button {
-  margin: 15px;
+  margin: 15px 20px 10px 0;
+}
+
+.email-input {
+  display: flex;
+  padding: 10px;
 }
 
 .banner-a input {
@@ -101,32 +104,42 @@ nav .nav-items {
   width: 50%;
   border-radius: 6px;
   height: 2rem;
-  margin: 0 0 0 2%;
+  margin: 2% 1% 2% 2%;
   padding: 0 0 0 10px;
 }
 
 .banner-a button {
-  align-self: flex-end;
-  position: relative;
-  right: 30%;
-  bottom: 50px;
   padding: 1%;
   border-radius: 4px;
   width: 11%;
   background-color: #369ba8;
   color: aliceblue;
+  margin: 2% 0 2% 0;
 }
 
 .banner-a h1 {
   font-weight: 900;
   font-size: 3rem;
+  width: 70%;
+}
+
+.banner-a p {
+  font-size: 0.8rem;
 }
 
 .banner-b {
   width: 35%;
+  height: 81%;
 }
 
-/* CARDS */
+.banner-b img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* CARDS -------------------------------------------------*/
 
 .cards-container {
     margin: 10px 0 10px 0;
@@ -208,6 +221,7 @@ nav .nav-items {
 
   .profile-information {
     width: 97%;
+    display: flex;
   }
 
   .cards .profile-picture { 
@@ -227,7 +241,7 @@ nav .nav-items {
 
 
 
-/* CONTACT */
+/* CONTACT -------------------------------------------------*/
 
 .contact {
   height: 40rem;
@@ -248,7 +262,7 @@ nav .nav-items {
 width: 100%;
 }
 
-/* FOOTER */
+/* FOOTER --------------------------------------------------*/
 
 footer {
     width: 100%;
@@ -271,10 +285,10 @@ div.main-footer-container{
 .container-footer {
     padding: 5px;
     width: 50%;
-    height: 18rem;
+    height: 11rem;
     display: grid;
     grid-template-columns: 20rem repeat(4, 1fr);
-    margin-top: 3rem;
+    margin-top: 1rem;
     justify-content: center;
 }    
 
